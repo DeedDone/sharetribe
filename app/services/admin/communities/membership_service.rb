@@ -3,8 +3,6 @@ class Admin::Communities::MembershipService
 
   PER_PAGE = 50
 
-  delegate :selected_statuses_title, :sorted_statuses, to: :presenter, prefix: true, allow_nil: false
-
   def initialize(community:, params:, current_user:)
     @params = params
     @community = community
@@ -12,7 +10,7 @@ class Admin::Communities::MembershipService
   end
 
   def memberships
-    @memberships ||= filtered_scope.accepted_or_banned
+    @memberships ||= filtered_scope.not_deleted_user
                                    .paginate(page: params[:page], per_page: PER_PAGE)
                                    .order("#{sort_column} #{sort_direction}")
   end
@@ -32,14 +30,14 @@ class Admin::Communities::MembershipService
   end
 
   def ban
-    membership.update_attributes(status: "banned")
-    membership.update_attributes(admin: 0) if membership.admin == 1
+    membership.update(status: "banned")
+    membership.update(admin: 0) if membership.admin == 1
     community.close_listings_by_author(membership.person)
     membership
   end
 
   def unban
-    membership.update_attributes(status: "accepted")
+    membership.update(status: "accepted")
     membership
   end
 
@@ -62,8 +60,10 @@ class Admin::Communities::MembershipService
     # rubocop:enable Rails/SkipsModelValidations
   end
 
-  def presenter
-    @presenter ||= Admin::MembershipPresenter.new(params)
+  def resend_confirmation
+    email_to_confirm = membership.person.latest_pending_email_address(community)
+    to_confirm = Email.find_by_address_and_community_id(email_to_confirm, community.id)
+    Email.send_confirmation(to_confirm, community)
   end
 
   private
@@ -172,6 +172,9 @@ class Admin::Communities::MembershipService
       statuses.push(CommunityMembership.admin) if params[:status].include?('admin')
       statuses.push(CommunityMembership.banned) if params[:status].include?(CommunityMembership::BANNED)
       statuses.push(CommunityMembership.posting_allowed) if params[:status].include?('posting_allowed')
+      statuses.push(CommunityMembership.accepted) if params[:status].include?(CommunityMembership::ACCEPTED)
+      statuses.push(CommunityMembership.pending_email_confirmation) if params[:status].include?('unconfirmed')
+      statuses.push(CommunityMembership.pending_consent) if params[:status].include?('pending')
       if statuses.size > 1
         status_scope = statuses.slice!(0)
         statuses.map{|x| status_scope = status_scope.or(x)}

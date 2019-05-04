@@ -168,27 +168,33 @@ az-AZ:
       getting_started:
         getting_started: ~
       available_languages:
+        cs: ~
+        da-DK: ~
+        de: ~
         en: ~
         en-AU: ~
         en-GB: ~
-        fr: ~
-        fr-CA: ~
         es: ~
         es-ES: ~
-        pt-PT: ~
-        pt-BR: ~
-        nb: ~
-        sv: ~
-        da-DK: ~
         fi: ~
-        ru: ~
-        de: ~
+        fr: ~
+        fr-CA: ~
         el: ~
-        nl: ~
-        tr-TR: ~
-        zh: ~
-        ja: ~
         it: ~
+        ja: ~
+        ko: ~
+        nb: ~
+        nl: ~
+        pl: ~
+        pt-BR: ~
+        pt-PT: ~
+        ru: ~
+        sv: ~
+        th-TH: ~
+        tr-TR: ~
+        vi: ~
+        zh: ~
+        zh-TW: ~
       settings:
         settings: ~
         general: ~
@@ -219,6 +225,7 @@ az-AZ:
         update_settings: ~
         automatically_confirmed_no_escrow: ~
         automatically_confirmed_no_escrow_stripe_info: ~
+        buyer_transaction_fees_are_only_supported_with_stripe: ~
         automatic_newsletter_frequency: ~
         newsletter_daily: ~
         newsletter_weekly: ~
@@ -232,6 +239,7 @@ az-AZ:
         you_will_be_redirected_to: ~
         delete_this_marketplace: ~
         payment_preferences: ~
+        pre_approved_listings: ~
       manage_members:
         manage_members: ~
         email: ~
@@ -260,6 +268,15 @@ az-AZ:
           admin: ~
           banned: ~
           posting_allowed: ~
+          accepted: ~
+          unconfirmed: ~
+          pending: ~
+        this_user_hasnt_confirmed_their_email_address: ~
+        unconfirmed_user: ~
+        resend: ~
+        cancel: ~
+        user_didnt_complete_the_signup_process: ~
+        pending_user: ~
       new_layout:
         new_layout: ~
         description_roadmap_new: ~
@@ -271,6 +288,12 @@ az-AZ:
         social_media: ~
         logo: ~
         logo_info: ~
+        social_media_title: ~
+        social_media_title_info: ~
+        link_for_facebook: ~
+        link_for_linkedin: ~
+        link_for_twitter: ~
+        social_media_description: ~
         twitter_handle: ~
         twitter_handle_info_text: ~
         twitter_handle_info_text_with_instructions: ~
@@ -288,6 +311,67 @@ az-AZ:
         enable_facebook_login: ~
         save: ~
         add_another_image: ~
+        google_connect: ~
+        google_instructions_link_text: ~
+        google_connect_info_text_with_instructions: ~
+        google_connect_info_text: ~
+        enable_google_login: ~
+        google_connect_id: ~
+        google_connect_secret: ~
+        linkedin_connect: ~
+        linkedin_instructions_link_text: ~
+        linkedin_connect_info_text_with_instructions: ~
+        linkedin_connect_info_text: ~
+        enable_linkedin_login: ~
+        linkedin_connect_id: ~
+        linkedin_connect_secret: ~
+      seo_settings:
+        seo: ~
+        title: ~
+        meta_title_label: ~
+        meta_title_info: ~
+        meta_title_link_text: ~
+        meta_description_label: ~
+        meta_description_info: ~
+        meta_description_link_text: ~
+        search_title: ~
+        search_meta_title_label: ~
+        search_meta_title_info: ~
+        search_meta_title_link_text: ~
+        search_meta_description_label: ~
+        search_meta_description_info: ~
+        search_meta_description_link_text: ~
+        listing_title: ~
+        listing_meta_title_label: ~
+        listing_meta_title_info: ~
+        listing_meta_title_link_text: ~
+        listing_meta_description_label: ~
+        listing_meta_description_info: ~
+        listing_meta_description_link_text: ~
+        category_title: ~
+        category_meta_title_label: ~
+        category_meta_title_info: ~
+        category_meta_title_link_text: ~
+        category_meta_description_label: ~
+        category_meta_description_info: ~
+        category_meta_description_link_text: ~
+        profile_title: ~
+        profile_meta_title_label: ~
+        profile_meta_title_info: ~
+        profile_meta_title_link_text: ~
+        profile_meta_description_label: ~
+        profile_meta_description_info: ~
+        profile_meta_description_link_text: ~
+        sitemap_label: ~
+        sitemap_info: ~
+        sitemap_info_link_text: ~
+        sitemap_info_public: ~
+        sitemap_info_private: ~
+        robots_label: ~
+        robots_info: ~
+        robots_info_link_text: ~
+        robots_info_2: ~
+        save: ~
       analytics:
         analytics: ~
         google_analytics_key: ~
@@ -299,8 +383,14 @@ az-AZ:
         sharetribe_analytics_instructions_link_text: ~
         end_user_analytics: ~
         save: ~
+      logo_link:
+        title: ~
+        info: ~
+        url: ~
+        placeholder: ~
       menu_links:
         menu_links: ~
+        menu_links_display: ~
         save: ~
         add_menu_link: ~
         title_placeholder: ~
@@ -313,6 +403,15 @@ az-AZ:
         all: ~
         max_number_of_links_info: ~
         about_page: ~
+      default_menu_links:
+        title: ~
+        about_link_title: ~
+        contact_link_title: ~
+        invite_link_title: ~
+        info: ~
+        display_about: ~
+        display_contact: ~
+        display_invite: ~
       topbar:
         topbar: ~
         new_listing_button_label: ~
@@ -391,10 +490,18 @@ az-AZ:
           other_party: ~
         participants: ~
         profile: ~
+        search_by_keyword: ~
+        search: ~
+        reset_search: ~
+        for_keyword: ~
       testimonials:
         testimonials: ~
         no_testimonials_found: ~
         displaying_xx_reviews: ~
+        search_keyword: ~
+        search: ~
+        reset_search: ~
+        for_keyword: ~
         headers:
           transaction: ~
           author: ~
@@ -407,6 +514,16 @@ az-AZ:
           skipped: ~
           published: ~
           blocked: ~
+        status_filter:
+          selected: ~
+          all: ~
+          published: ~
+          positive: ~
+          negative: ~
+          skipped: ~
+          waiting: ~
+          blocked: ~
+          selected_js: ~
         form:
           review_text: ~
           save: ~
@@ -416,6 +533,17 @@ az-AZ:
           confirm_modify: ~
           deleting_info: ~
           blocking_info: ~
+      invitations:
+        invitations: ~
+        used:
+          "yes": ~
+          "no": ~
+        headers:
+          sent_by: ~
+          message: ~
+          sent_to: ~
+          used: ~
+          date_sent: ~
       listings:
         listings: ~
         search_by_title_author_category: ~
@@ -427,6 +555,8 @@ az-AZ:
           open: ~
           closed: ~
           expired: ~
+          approval_pending: ~
+          approval_rejected: ~
         headers:
           title: ~
           author: ~
@@ -437,6 +567,14 @@ az-AZ:
         open: ~
         closed: ~
         expired: ~
+        approved: ~
+        approval_pending: ~
+        approval_rejected: ~
+        form:
+          this_listing_has_not_not_been_approved_yet: ~
+          approve: ~
+          reject: ~
+          cancel: ~
       user_fields:
         user_fields: ~
       footer:
@@ -453,12 +591,26 @@ az-AZ:
         footer_copyright: ~
         footer_enabled: ~
         social_links: ~
+        title_placeholder: ~
+        url_placeholder: ~
         style:
           dark: ~
           light: ~
+          marketplace_color: ~
+          logo: ~
         social:
           title: ~
           url: ~
+      domain:
+        domain: ~
+        marketplace_domain: ~
+        offer_pro: ~
+        upgrade_pro_plan_link: ~
+        your_marketplace_address_is: ~
+        would_you_like_to_change_address: ~
+        contact_us: ~
+        you_can_now_use_a_custom_domain: ~
+        would_you_like_to_change_domain: ~
     custom_fields:
       edit:
         edit_listing_field: ~
@@ -710,6 +862,8 @@ az-AZ:
       stripe_fee_notice: ~
       fee_should_be_less_than_minimum_price: ~
       confirm_disable: ~
+      commission_from_buyer_label: ~
+      minimum_buyer_transaction_fee_label: ~
       stripe_connected:
         title: ~
         disable: ~
@@ -722,6 +876,7 @@ az-AZ:
         enable: ~
       cannot_enable_gateway: ~
       cannot_disable_gateway: ~
+      cannot_enable_gateway_because_of_buyer_commission: ~
       stripe_form:
         add_your_api_keys: ~
         how_to_get_these: ~
@@ -843,6 +998,7 @@ az-AZ:
       quantity_label: ~
       sum_label: ~
       service_fee_label: ~
+      buyer_service_fee_label: ~
       you_will_get_label: ~
       total_label: "Cəmi:"
       total_value: ~
@@ -888,6 +1044,7 @@ az-AZ:
     message:
       accepted_request: "İstəyi qəbul etdi"
       received_payment: ~
+      received_payment_wo_sum: ~
       accepted_offer: "Təklifi qəbul etdi"
       rejected_request: "İstəyi rədd etdi və ödənişi ləğv etdi"
       rejected_offer: "Təklifi rədd etdi"
@@ -897,8 +1054,10 @@ az-AZ:
       canceled_offer: "Təklifi ləğv etdi"
       paid: "%{sum} ödənilmişdir"
       payment_preauthorized: ~
+      payment_preauthorized_wo_sum: ~
       stripe:
         held_payment: ~
+        held_payment_wo_sum: ~
         confirmed_request: ~
     new:
       message: Mesaj
@@ -1113,7 +1272,9 @@ az-AZ:
       shipping_total: ~
       product: ~
       price_payer_paid: ~
+      subtotal: ~
       service_fee: ~
+      buyer_service_fee: ~
       you_will_get: ~
       new_payment: ~
       price_per_unit_type: "%{unit_type} üçün qiymət"
@@ -1129,6 +1290,7 @@ az-AZ:
       duration: ~
       quantity: ~
       subtotal: ~
+      buyer_service_fee: ~
       total: ~
       price: ~
       service_fee: ~
@@ -1153,7 +1315,7 @@ az-AZ:
       subtotal: "Ara yekun"
       total: Cəmi
       price: Qiymət
-      service_fee: "Xidmət haqqı"
+      buyer_service_fee: ~
       stripe_gateway_fee: ~
       paypal_gateway_fee: ~
       money_will_be_transferred: ~
@@ -1219,6 +1381,24 @@ az-AZ:
       this_is_automatic_message: ~
       person_name: "Ad:"
       person_email: "E-poçt:"
+    listing_submited_for_review:
+      subject: ~
+      there_is_a_new_listing_to_review: ~
+      review_the_listing: ~
+      this_is_automatic_message: ~
+    listing_approved:
+      subject: ~
+      listing_has_been_approved: ~
+      view_the_listing: ~
+    listing_rejected:
+      subject: ~
+      listing_has_been_rejected: ~
+      contact_link: ~
+      edit_the_listing: ~
+    edited_listing_submited_for_review:
+      subject: ~
+      there_is_a_edited_listing_to_review: ~
+      review_the_listing: ~
   error_messages:
     booking:
       booking_failed_payment_voided: ~
@@ -1278,9 +1458,9 @@ az-AZ:
     your_email_address: "Email ünvanınız"
   errors:
     messages:
-      invalid_date: ~
+      invalid_date: "tarixi yanlışdır"
       invalid_time: ~
-      invalid_datetime: ~
+      invalid_datetime: "tarixi-vaxtı yanlışdır"
       is_at: ~
       before: ~
       on_or_before: ~
@@ -1534,8 +1714,8 @@ az-AZ:
       comment_sent: "Şərh verildi"
       confirmation_link_is_wrong_or_used: "Təsdiq linki artıq istifadə edilmiş və ya başqa şəkildə deaktivləşmişdir. Xahiş edirik təkrar daxil edin. Səhv davam edərsə bizə müraciət etməyinizi xahiş edirik."
       additional_email_confirmed: "Daxil etdiyiniz e-poçt təsdiqlənmişdir."
-      could_not_get_email_from_facebook: "Facebook-dan e-poçt ünvanını əldə edilmədi və buna görə də e-poçt olmadan hesab yaradılmamışdır"
-      facebook_email_unconfirmed: "Facebook hesabınızla əlaqəli '%{email}' e-poçt ünvanı artıq istifadə olunur, lakin hələ təsdiqlənilməyib. Facebookla giriş etmədən əvvəl e-poçt ünvanınızı təsdiqləyin."
+      could_not_get_email_from_social_network: ~
+      social_network_email_unconfirmed: ~
       create_new_listing: "Daha bir elan ver"
       create_one_here: "burada yeni birini yaradın"
       email_confirmation_sent_to_new_address: "Təsdiqləmə məktubu yeni ünvanınıza göndırildi."
@@ -1572,7 +1752,7 @@ az-AZ:
       listing_updated_successfully: "Elan uğurla yeniləndi"
       listing_updated_availability_management_enabled: "Elan uğurla yeniləndi. Mövcudluğun idarə edilməsi aktivdir."
       listing_updated_availability_management_disabled: "Elan uğurla yeniləndi. Mövcudluğun idarə edilməsi aktiv deyil."
-      only_kassi_administrators_can_access_this_area: "Bu sahəyə giriş icazəsi yalnız %{service_name} komandasına malikdir."
+      only_kassi_administrators_can_access_this_area: ~
       only_listing_author_can_close_a_listing: "Bir elanın bağlama icazəsi yalnız onu yaratdığı istifadəçiyə malikdir"
       only_listing_author_can_edit_a_listing: "Bir elanın düzəltmə icazəsi yalnız onu yaratdığı istifadəçiyə malikdir"
       payment_successful: "Ödəniş uğrla keçdi"
@@ -1654,6 +1834,8 @@ az-AZ:
       paypal_payments: ~
       stripe_payments: ~
       payments: Ödənişlər
+      listings: ~
+      listings_search_placeholder: ~
   listings:
     bubble_listing_not_visible:
       listing_not_visible: ~
@@ -1679,9 +1861,13 @@ az-AZ:
       reopen_listing: "Elanı yenidən aktivləşdir"
       move_to_top: "Ana səhifənin yuxarısına qoy"
       show_in_updates_email: "Növbəti bülletendə göstər"
-      show_in_updates_email_loading: ~
-      show_in_updates_email_error: ~
+      show_in_updates_email_loading: Yüklənir...
+      show_in_updates_email_error: "Server cavab vermir. Zəhmət olmasa, səhifəni yeniləyin və yenidən cəhd edin."
       show_in_updates_email_success: ~
+      listing_is_pending: ~
+      listing_is_rejected: ~
+      approve_listing: ~
+      reject_listing: ~
     map:
       open_in_google_maps: "Google Maps-da aç"
     error:
@@ -1762,6 +1948,9 @@ az-AZ:
         origin: ~
       send_button:
         save_listing: "Elanı yerləşdir"
+        submit_for_review: ~
+        will_be_reviewed: ~
+        we_noticed_youre_an_admin: ~
       share_type:
         select: ~
         borrow: "Borc götürmək"
@@ -1841,6 +2030,7 @@ az-AZ:
       select_one: ~
       start_time: ~
       end_time: ~
+      marketplace_fees_may_apply: ~
     new:
       listing: ~
       selected_category: ~
@@ -1854,13 +2044,14 @@ az-AZ:
       community_not_configured_for_payments: ~
       payment_settings_link: ~
       community_not_configured_for_payments_admin: ~
+      you_are_now_posting_a_listing_on_behalf_of: ~
     quantity:
       hour: ~
       day: "Günlərin sayı:"
       night: ~
       week: "Həftə sayı"
       month: ~
-      unit: ~
+      unit: "Miqdarı:"
       custom: ~
     quantity_placeholder: ~
     please_comment: "Şərh ver"
@@ -1882,7 +2073,7 @@ az-AZ:
       no_reviews: "Heç bir şərh verilməyib"
       offer: Təklif
       listing_created: ~
-      open_until: ~
+      open_until: "%{date} tarixədək aktiv olan"
       feedback: ~
       qr_code: ~
       request: İstək
@@ -1906,18 +2097,18 @@ az-AZ:
       pickup_no_price: ~
       youtube_video_player: "YouTube video pleyer"
     unit_types:
-      piece: ~
-      hour: ~
+      piece: ədəd
+      hour: saat
       day: gün
-      night: ~
+      night: gecə
       week: həftə
-      month: ~
-      unit: ~
+      month: ay
+      unit: ədəd
     verification_required:
       verification_required: "Doğrulama tələb olunur"
   listing_conversations:
     preauthorize:
-      dates_not_available: ~
+      dates_not_available: "Seçilmiş günlər mövcud deyil"
       error_in_checking_availability: ~
       details: ~
       by: ~
@@ -2080,7 +2271,7 @@ az-AZ:
       username_is_invalid: "İstifadəçi adı etibarsızdır. İzin verilən simvollar məktublar, nömrələr və altçizdirlər. Yalnız hərflər, rəqəmlər və \"_\" işarəsi istifadə edilə bilər."
       visible_only_to_you: "yalnız sizə və %{service_name} komandasına görünür"
       visible_to_everybody: "hər kəsə görünür"
-      create_account_with_facebook: "Facebook ilə qeydiyyatdan keç"
+      create_account_with_provider: ~
       OR: "VƏ YA"
       signup_with_email: "E-poçt vasitəsilə qeydiyyatdan keç"
       this_field_will_be_publicly_visible: ~
@@ -2088,9 +2279,8 @@ az-AZ:
       grade: "qiymətləndirmə:"
       and_gave_following_feedback: "və aşağıdakı geribildirim verdi."
     profile_listings:
-      show_also_closed: "Bağlı elanları də göstər"
-      show_only_open: "Yalnız açıq elanları göstər"
       no_image: "Şəkil yoxdur"
+      manage_listings: ~
     show:
       contact: "%{person} ilə əlaqə saxla"
       about_me: "Mənim haqqımda:"
@@ -2123,6 +2313,8 @@ az-AZ:
       show_all_listings: "Bütün elanları göstər"
       show_all_open_listings: "Bütün aktiv elanları göstər"
       show_all_reviews: "Bütün şərhləri göstər"
+      admin_actions: ~
+      post_listing_as: ~
     followed_people:
       you_follow_plural: "Siz %{count} istifadəçi zləyirsiniz"
       you_follow_singular: "Siz %{count} istifadəçi izləyirsiniz"
@@ -2147,7 +2339,7 @@ az-AZ:
       account_creation_link_text: "bura klikləyin"
       cancle_facebook_connect: "Bu hesabı qoşmaq istəmirsinizsə,%{cancel_link} klik edə bilərsiniz."
       facebook_cancel_link_text: imtina
-      log_in_with_your_facebook_account: "Facebook ilə daxil et"
+      log_in_with_your_provider_account: ~
       or_sign_up_with_your_username: "... və ya istifadəçi adınız və ya e-poçtunuzla:"
       we_will_not_post_without_asking_you: "Biz sizdən soruşmadan Facebook-da heç vaxt yazmayacağıq."
     password_forgotten:
@@ -2248,6 +2440,7 @@ az-AZ:
       invisible: "(digər istifadəçilərə göstərilmir)"
       image_is_processing: "Gözləyin. Profil şəklinizi bir dəqiqənin içində hazır olacaq."
       shown_in_your_public_profile: "(ictimai profilinizdə göstərilir)"
+      editing_profile_of: ~
     save_information: "Məlumatı yadda saxla"
   shipping_address:
     shipping_address: "Çatdırılma ünvanı"
@@ -2350,7 +2543,7 @@ az-AZ:
     formats:
       short: "%b %e, %Y saat %H:%M"
       shorter: "%b %e saat %H:%M"
-      short_date: "%b %e, %Y"
+      short_date: "%e.%m.%y"
       hours_only: "%H:%M"
   timestamps:
     day_ago: "%{count} gün əvvəl"
@@ -2458,6 +2651,7 @@ az-AZ:
       signup: "Qeydiyyatdan keç"
       admin_dashboard: "Admin paneli"
       language: Dil
+      listings: ~
     utils:
       km: km
       mi: mi
@@ -2487,14 +2681,8 @@ az-AZ:
       multi_page_html: "<b>%{count}-dan</b> <b>%{from}&nbsp;-&nbsp;%{to}</b> %{model} göstərilir"
     person:
       community_members_entries_info:
-        single_page:
-          zero: "%{model} tapılmadı"
-          other: "%{accepted_count} qəbul edilmiş %{accepted_model} və %{banned_count} qadağan edilmiş %{banned_model} göstərilir"
-        single_page_html:
-          zero: "%{model} tapılmadı"
-          other: "<b>%{accepted_count}</b> qəbul edilmiş %{accepted_model} və %{banned_count} qadağan edilmiş %{banned_model} göstırilir"
-        multi_page: "%{accepted_count} qəbul edilmiş %{accepted_model} və %{banned_count} qadağan edilmiş %{banned_model}-dan %{from} - %{to} %{model} göstərilir"
-        multi_page_html: "<b>%{accepted_count}</b> qəbul edilmiş %{accepted_model} və %{banned_count} qadağan edilmiş %{banned_model}-dan <b>%{from}&nbsp;-&nbsp;%{to}</b> %{model} göstərilir"
+        multi_page: ~
+        multi_page_html: ~
   stripe_accounts:
     admin_account_not_connected: ~
     contact_admin_link_text: "%{service_name} komandasına müraciət edin"
@@ -2550,6 +2738,7 @@ az-AZ:
       address_kanji_line1: ~
       male: ~
       female: ~
+      mcc: ~
     form_bank:
       bank_account_number: ~
       bank_routing_number: ~
@@ -2598,3 +2787,12 @@ az-AZ:
     wrong_setup: ~
     invalid_bank_account_number: ~
     invalid_postal_code: ~
+  seo_sections:
+    you_can_use_variables: ~
+    placeholder:
+      search_results: ~
+      search_results_for: ~
+      listing_description: ~
+      category_description: ~
+      profile_title: ~
+      profile_description: ~

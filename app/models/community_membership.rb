@@ -16,6 +16,7 @@
 #
 # Indexes
 #
+#  community_person_status                      (community_id,person_id,status)
 #  index_community_memberships_on_community_id  (community_id)
 #  index_community_memberships_on_person_id     (person_id) UNIQUE
 #
@@ -44,11 +45,13 @@ class CommunityMembership < ApplicationRecord
   scope :accepted, -> { where(status: ACCEPTED) }
   scope :banned, -> { where(status: BANNED) }
   scope :accepted_or_banned, -> { where(status: [ACCEPTED, BANNED]) }
-  scope :banned, -> { where(status: 'banned') }
   scope :admin, -> { where(admin: true) }
   scope :posting_allowed, -> { where(can_post_listings: true) }
   scope :not_banned, -> { where("community_memberships.status <> ?", [BANNED]) }
   scope :not_deleted_user, -> { where.not(status: DELETED_USER) }
+  scope :not_accepted, -> { where.not(status: ACCEPTED) }
+  scope :pending_email_confirmation, -> { where(status: PENDING_EMAIL_CONFIRMATION) }
+  scope :pending_consent, -> { where(status: PENDING_CONSENT) }
 
   def person_can_join_community_only_once
     if CommunityMembership.find_by_person_id_and_community_id(person_id, community_id)
